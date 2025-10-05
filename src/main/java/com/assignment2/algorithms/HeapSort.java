@@ -13,7 +13,10 @@ public class HeapSort {
     public void sort(int[] arr) {
         int n = arr.length;
 
-        // Build heap (bottom-up)
+        // Edge case: empty array or single-element array
+        if (n < 2) return;
+
+        // Build heap (rearrange array from bottom-up)
         for (int i = n / 2 - 1; i >= 0; i--) {
             heapify(arr, n, i);
         }
