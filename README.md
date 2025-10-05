@@ -18,7 +18,13 @@ The runner measures:
 - Comparisons
 - Swaps
 
-Input sizes tested: 100, 1000, 10000, 100000.  
+## Python Visualization
+Use `PlotMaker.py` to visualize the benchmark results:
+- Execution time vs input size
+- Comparisons vs input size
+- Swaps vs input size
+
+  Input sizes tested: 100, 1000, 10000, 100000.  
 This approach validates theoretical complexity against empirical results.
 
 ## How to Run
