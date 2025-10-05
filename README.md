@@ -10,6 +10,17 @@ It records **comparisons**, **swaps**, and **execution time** for arrays of diff
 - **Worst case:** O(n log n) — every element may require log n swaps
 - **Average case:** O(n log n)
 
+## Benchmarking
+
+All algorithms are benchmarked using the CLI `BenchmarkRunner`.  
+The runner measures:
+- Execution time (ms)
+- Comparisons
+- Swaps
+
+Input sizes tested: 100, 1000, 10000, 100000.  
+This approach validates theoretical complexity against empirical results.
+
 ## How to Run
 Build and run with Maven:
 ```bash
