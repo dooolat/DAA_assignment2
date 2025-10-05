@@ -1,0 +1,16 @@
+Size: 100, Type: Random, Time: 0 ms, Comparisons: 1530, Swaps: 578
+Size: 100, Type: Sorted, Time: 0 ms, Comparisons: 1626, Swaps: 639
+Size: 100, Type: Reversed, Time: 0 ms, Comparisons: 1422, Swaps: 516
+Size: 100, Type: NearlySorted, Time: 0 ms, Comparisons: 1619, Swaps: 627
+Size: 1000, Type: Random, Time: 0 ms, Comparisons: 25237, Swaps: 9061
+Size: 1000, Type: Sorted, Time: 0 ms, Comparisons: 26373, Swaps: 9690
+Size: 1000, Type: Reversed, Time: 0 ms, Comparisons: 23950, Swaps: 8310
+Size: 1000, Type: NearlySorted, Time: 0 ms, Comparisons: 26066, Swaps: 9561
+Size: 10000, Type: Random, Time: 1 ms, Comparisons: 353271, Swaps: 124307
+Size: 10000, Type: Sorted, Time: 1 ms, Comparisons: 366746, Swaps: 131357
+Size: 10000, Type: Reversed, Time: 1 ms, Comparisons: 340073, Swaps: 116698
+Size: 10000, Type: NearlySorted, Time: 1 ms, Comparisons: 363901, Swaps: 130065
+Size: 100000, Type: Random, Time: 12 ms, Comparisons: 4529011, Swaps: 1574634
+Size: 100000, Type: Sorted, Time: 4 ms, Comparisons: 4668968, Swaps: 1649815
+Size: 100000, Type: Reversed, Time: 4 ms, Comparisons: 4390232, Swaps: 1497475
+Size: 100000, Type: NearlySorted, Time: 5 ms, Comparisons: 4642756, Swaps: 1635770
