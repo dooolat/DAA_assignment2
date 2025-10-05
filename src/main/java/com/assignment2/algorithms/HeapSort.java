@@ -13,7 +13,7 @@ public class HeapSort {
     public void sort(int[] arr) {
         int n = arr.length;
 
-        // Build heap (rearrange array from bottom-up)
+        // Build heap (bottom-up)
         for (int i = n / 2 - 1; i >= 0; i--) {
             heapify(arr, n, i);
         }
@@ -25,32 +25,26 @@ public class HeapSort {
         }
     }
 
+    // Optimized bottom-up in-place heapify
     private void heapify(int[] arr, int n, int i) {
-        int largest = i;  // root
-        int left = 2 * i + 1;
-        int right = 2 * i + 2;
-
-        // Left child
-        if (left < n) {
+        int temp = arr[i];
+        int child;
+        while (2 * i + 1 < n) {
+            child = 2 * i + 1;  // left child
             tracker.incrementComparisons();
-            if (arr[left] > arr[largest]) {
-                largest = left;
+            if (child + 1 < n) { // right child exists?
+                tracker.incrementComparisons();
+                if (arr[child + 1] > arr[child]) {
+                    child++; // take the larger child
+                }
             }
-        }
-
-        // Right child
-        if (right < n) {
             tracker.incrementComparisons();
-            if (arr[right] > arr[largest]) {
-                largest = right;
-            }
+            if (temp >= arr[child]) break;
+            arr[i] = arr[child];
+            tracker.incrementSwaps();
+            i = child;
         }
-
-        // If root is not the largest, swap and continue heapify
-        if (largest != i) {
-            swap(arr, i, largest);
-            heapify(arr, n, largest);
-        }
+        arr[i] = temp;
     }
 
     private void swap(int[] arr, int i, int j) {
