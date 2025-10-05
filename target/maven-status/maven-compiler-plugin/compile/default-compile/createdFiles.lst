@@ -1,1 +1,3 @@
+cli\BenchmarkRunner.class
 com\assignment2\App.class
+metrics\PerformanceTracker.class
